@@ -1,0 +1,346 @@
+@font-face {
+    font-family: 'flamabook';
+    src: url('../fonts/flama/flama-book-webfont.eot');
+    src: url('../fonts/flama/flama-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/flama/flama-book-webfont.woff2') format('woff2'),
+         url('../fonts/flama/flama-book-webfont.woff') format('woff'),
+         url('../fonts/flama/flama-book-webfont.ttf') format('truetype'),
+         url('../fonts/flama/flama-book-webfont.svg#flamabook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'flamaultralight';
+    src: url('../fonts/flama/flama-ultralight-webfont.eot');
+    src: url('../fonts/flama/flama-ultralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/flama/flama-ultralight-webfont.woff2') format('woff2'),
+         url('../fonts/flama/flama-ultralight-webfont.woff') format('woff'),
+         url('../fonts/flama/flama-ultralight-webfont.ttf') format('truetype'),
+         url('../fonts/flama/flama-ultralight-webfont.svg#flamaultralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'flamalight';
+    src: url('../fonts/flama/flama-light-webfont.eot');
+    src: url('../fonts/flama/flama-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/flama/flama-light-webfont.woff2') format('woff2'),
+         url('../fonts/flama/flama-light-webfont.woff') format('woff'),
+         url('../fonts/flama/flama-light-webfont.ttf') format('truetype'),
+         url('../fonts/flama/flama-light-webfont.svg#flamalight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'flamalight_italic';
+    src: url('../fonts/flama/flama-lightitalic-webfont.eot');
+    src: url('../fonts/flama/flama-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/flama/flama-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/flama/flama-lightitalic-webfont.woff') format('woff'),
+         url('../fonts/flama/flama-lightitalic-webfont.ttf') format('truetype'),
+         url('../fonts/flama/flama-lightitalic-webfont.svg#flamalight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	
+	font-family: $font-family-flamabook;
+}
+
+.elearning-charcoal {
+	
+	background: $brand-elearning-charcoal;
+	color: #fff;
+
+	a {
+
+		color: #fff;
+		text-decoration: none;
+		font-size: 18px;
+	}
+
+}
+
+.fa-elearning {
+    
+    font-size: 1.5em;
+    padding-left: 4px;
+
+}
+
+.elearning-black {
+	
+	background: $brand-elearning-black;
+	color: #fff;
+}
+
+.elearning-white {
+	
+	background: #fff;
+}
+
+header.elearning-charcoal {
+	
+
+	height: 60px;
+	padding-top: 15px;
+	position: relative;
+
+	
+	img {
+
+		position: absolute;
+		transform: translate(-50%, -26%);
+		height: 60px;
+		
+
+	}
+}
+
+.elearning-dropdown.dropdown {
+    
+    position: absolute;
+    width: 98%;
+    margin: 0;
+    left:0;
+    border-left: 4px solid $brand-elearning-orange;
+    top: 25%;
+
+	button {
+
+		width: 100%;
+		font-size: 22px;
+	}
+	
+	.glyphicon-triangle-bottom {
+
+		color: $brand-elearning-orange;
+	}
+}
+
+.elearning-section {
+    
+    ul {
+
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+
+        padding: 0 0 12px 25px;
+    }
+
+    h4 {
+
+        color: $brand-elearning-orange;
+        font-size: 14px;
+
+    }
+
+}
+
+p.section-more {
+    
+    color: $brand-elearning-gray;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 12px;
+
+}
+
+span.section-more {
+    
+    color: $brand-elearning-orange;
+    border: 1px solid $brand-elearning-gray;
+    display: inline-block;
+    width: 24px;
+    line-height: 18px;
+    margin-left: 3px;
+
+}
+
+.elearning-section.materials{ 
+
+    li {
+        
+        background: url(../images/elearning-lit-bullet.png) no-repeat left top;
+
+    }
+}
+
+.elearning-section.discussion {
+    
+    li {
+
+        background: url(../images/elearning-discussion-bullet.png) no-repeat left top;
+
+    }
+}
+
+
+
+
+.elearning-section {
+	
+	margin-bottom: 5px;
+
+    
+     border-width: 5px 0 0 0;
+    -moz-border-image: -moz-linear-gradient(left, #00b5e5 0%, #874cb0 100%);
+    -webkit-border-image: -webkit-linear-gradient(left, #00b5e5 0%, #874cb0 100%);
+    border-image: linear-gradient(left, #00b5e5 0%, #874cb0 100%);
+    border-image-slice: 1;
+    
+}
+
+.elearning-section.site-branding {
+    
+    border-top-width: 0;
+
+}
+
+.elearning-login {
+    
+    .form-control {
+
+        width: 90%;
+    }
+}
+
+.elearning-doc-image {
+    
+    display: none;
+}
+
+footer .site-info {
+    
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.elearning-aside {
+
+    border-right: 10px solid $brand-elearning-silver;
+    display: block;
+
+    img {
+
+        display:none;
+    }
+
+    ul {
+
+        list-style-type: none;
+        padding-left: 10px;
+
+    }
+
+    ul.member-actions-menu {
+
+        padding-top: 20px;
+        padding-bottom: 40px;
+
+        li {
+
+            padding-bottom: 10px;
+        }
+    }
+
+    ul.product-categories-menu {
+
+        padding-top: 16px;
+
+        li {
+
+            padding-bottom: 36px;
+        }
+
+    }
+
+    .elearning-widget-area {
+
+        padding-top: 70%;
+    }
+
+}
+
+@media (min-width: $screen-lg-min) {
+    
+    .elearning-mobile-header {
+
+    	display: none;
+    }
+
+    .elearning-aside {
+
+        display: block;
+
+        img {
+
+            display: block;
+        }
+
+        .ul-member-actions-menu {
+
+            padding-top: 76px;
+        }
+    }
+
+    .elearning-login  {
+
+    	display: block;
+        font-weight: bold;
+
+        .form-inline {
+
+        	input {
+
+        		width: 74%;
+
+        	}
+
+        	label {
+                
+        		width: 20%;
+                margin-right: 10px;
+
+        	}
+
+        	button {
+
+        		width: 80%;
+        	}
+        }
+    }
+
+    .elearning-user-info {
+
+        padding: 10px 16px 10px 16px;
+
+    }
+
+    .elearning-doc-image {
+
+        display: block;
+    }
+
+    
+ }
