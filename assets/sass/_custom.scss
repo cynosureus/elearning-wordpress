@@ -94,6 +94,33 @@ body {
 .elearning-white {
 	
 	background: #fff;
+
+}
+
+.section-heading {
+
+    @include background-image( linear-gradient(to right, #ee4f32, $brand-elearning-orange) );
+    margin-bottom: 10px;
+
+    h4 {
+
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+
+
+    }
+
+    span.section-more {
+        
+        color: #fff;
+        font-size: 24px;
+        display: inline-block;
+        width: 24px;
+        line-height: 18px;
+        margin-left: 3px;
+
+    }
 }
 
 header.elearning-charcoal {
@@ -148,34 +175,11 @@ header.elearning-charcoal {
         padding: 0 0 12px 25px;
     }
 
-    h4 {
-
-        color: $brand-elearning-orange;
-        font-size: 14px;
-
-    }
-
-}
-
-p.section-more {
     
-    color: $brand-elearning-gray;
-    font-weight: bold;
-    margin-top: 10px;
-    font-size: 12px;
 
 }
 
-span.section-more {
-    
-    color: $brand-elearning-orange;
-    border: 1px solid $brand-elearning-gray;
-    display: inline-block;
-    width: 24px;
-    line-height: 18px;
-    margin-left: 3px;
 
-}
 
 .elearning-section.materials{ 
 
@@ -198,18 +202,7 @@ span.section-more {
 
 
 
-.elearning-section {
-	
-	margin-bottom: 5px;
 
-    
-     border-width: 5px 0 0 0;
-    -moz-border-image: -moz-linear-gradient(left, #00b5e5 0%, #874cb0 100%);
-    -webkit-border-image: -webkit-linear-gradient(left, #00b5e5 0%, #874cb0 100%);
-    border-image: linear-gradient(left, #00b5e5 0%, #874cb0 100%);
-    border-image-slice: 1;
-    
-}
 
 .elearning-section.site-branding {
     
