@@ -136,13 +136,28 @@ function cynosure_elearning_scripts() {
 
 	wp_enqueue_script( 'cynosure_elearning-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20130115', true );
 
+	wp_enqueue_style( 'fancyboxjs-css', get_template_directory_uri() . '/assets/js/fancybox/source/jquery.fancybox.css' );
+
+	wp_enqueue_script( 'fancyboxjs', get_template_directory_uri() . '/assets/js/fancybox/source/jquery.fancybox.pack.js', array( 'jquery' ) );
+
+
+	wp_enqueue_style( 'fancyboxjs-buttons-css', get_template_directory_uri() . '/assets/js/fancybox/source/helpers/jquery.fancybox-buttons.css' );
+
+	wp_enqueue_script( 'fancyboxjs-buttons', get_template_directory_uri() . '/assets/js/fancybox/source/helpers/jquery.fancybox-buttons.js', array( 'jquery' ) );
+
+	wp_enqueue_script( 'fancyboxjs-media', get_template_directory_uri() . '/assets/js/fancybox/source/helpers/jquery.fancybox-media.js', array( 'jquery' ) );
+
 	wp_enqueue_style( 'elearning-styles', get_template_directory_uri() . '/assets/css/elearning.css' );
 
 	wp_enqueue_script( 'scotch-panels-master', get_template_directory_uri() . '/assets/js/scotch-panels-master/src/scotchPanels.js' );
 
-	wp_enqueue_script( 'elearning-panel', get_template_directory_uri() . '/assets/js/elearningpanel.js', array( 'jquery' ) );
+	
 
 	wp_enqueue_style('font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+
+	
+
+	wp_enqueue_script( 'elearning-panel', get_template_directory_uri() . '/assets/js/elearningpanel.js', array( 'jquery' ) );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

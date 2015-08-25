@@ -8885,132 +8885,146 @@ header.elearning-charcoal img {
   font-size: 22px;
 }
 /* line 159, ../sass/_custom.scss */
-.elearning-dropdown.dropdown .glyphicon-triangle-bottom {
+.elearning-dropdown.dropdown .fa.fa-caret-down {
   color: #D77A27;
+  font-size: 32px;
 }
 
-/* line 167, ../sass/_custom.scss */
+/* line 168, ../sass/_custom.scss */
 .elearning-section ul {
   list-style-type: none;
   padding: 0;
 }
-/* line 173, ../sass/_custom.scss */
+/* line 174, ../sass/_custom.scss */
 .elearning-section li {
   padding: 0 0 12px 25px;
 }
 
-/* line 186, ../sass/_custom.scss */
+/* line 187, ../sass/_custom.scss */
 .elearning-section.materials li {
   background: url(../images/elearning-lit-bullet.png) no-repeat left top;
 }
 
-/* line 195, ../sass/_custom.scss */
+/* line 196, ../sass/_custom.scss */
 .elearning-section.discussion li {
   background: url(../images/elearning-discussion-bullet.png) no-repeat left top;
 }
 
-/* line 207, ../sass/_custom.scss */
+/* line 208, ../sass/_custom.scss */
 .elearning-section.site-branding {
   border-top-width: 0;
 }
 
-/* line 215, ../sass/_custom.scss */
+/* line 216, ../sass/_custom.scss */
 .elearning-login .form-control {
   width: 90%;
 }
 
-/* line 221, ../sass/_custom.scss */
+/* line 222, ../sass/_custom.scss */
 .elearning-doc-image {
   display: none;
 }
 
-/* line 226, ../sass/_custom.scss */
+/* line 227, ../sass/_custom.scss */
 footer .site-info {
   padding-top: 8px;
   padding-bottom: 8px;
 }
 
-/* line 232, ../sass/_custom.scss */
+/* line 233, ../sass/_custom.scss */
 .elearning-aside {
   border-right: 10px solid #f1f1f1;
   display: block;
 }
-/* line 237, ../sass/_custom.scss */
+/* line 238, ../sass/_custom.scss */
 .elearning-aside img {
   display: none;
 }
-/* line 242, ../sass/_custom.scss */
+/* line 243, ../sass/_custom.scss */
 .elearning-aside ul {
   list-style-type: none;
   padding-left: 10px;
 }
-/* line 249, ../sass/_custom.scss */
+/* line 250, ../sass/_custom.scss */
 .elearning-aside ul.member-actions-menu {
   padding-top: 20px;
   padding-bottom: 40px;
 }
-/* line 254, ../sass/_custom.scss */
+/* line 255, ../sass/_custom.scss */
 .elearning-aside ul.member-actions-menu li {
   padding-bottom: 10px;
 }
-/* line 260, ../sass/_custom.scss */
+/* line 261, ../sass/_custom.scss */
 .elearning-aside ul.product-categories-menu {
   padding-top: 16px;
 }
-/* line 264, ../sass/_custom.scss */
+/* line 265, ../sass/_custom.scss */
 .elearning-aside ul.product-categories-menu li {
   padding-bottom: 36px;
 }
-/* line 271, ../sass/_custom.scss */
+/* line 272, ../sass/_custom.scss */
 .elearning-aside .elearning-widget-area {
   padding-top: 70%;
 }
 
 @media (min-width: 1200px) {
-  /* line 280, ../sass/_custom.scss */
+  /* line 281, ../sass/_custom.scss */
   .elearning-mobile-header {
     display: none;
   }
 
-  /* line 285, ../sass/_custom.scss */
+  /* line 286, ../sass/_custom.scss */
   .elearning-aside {
     display: block;
   }
-  /* line 289, ../sass/_custom.scss */
+  /* line 290, ../sass/_custom.scss */
   .elearning-aside img {
     display: block;
   }
-  /* line 294, ../sass/_custom.scss */
+  /* line 295, ../sass/_custom.scss */
   .elearning-aside .ul-member-actions-menu {
     padding-top: 76px;
   }
 
-  /* line 300, ../sass/_custom.scss */
+  /* line 301, ../sass/_custom.scss */
   .elearning-login {
     display: block;
     font-weight: bold;
   }
-  /* line 307, ../sass/_custom.scss */
+  /* line 308, ../sass/_custom.scss */
   .elearning-login .form-inline input {
     width: 74%;
   }
-  /* line 313, ../sass/_custom.scss */
+  /* line 314, ../sass/_custom.scss */
   .elearning-login .form-inline label {
     width: 20%;
     margin-right: 10px;
   }
-  /* line 320, ../sass/_custom.scss */
+  /* line 321, ../sass/_custom.scss */
   .elearning-login .form-inline button {
     width: 80%;
   }
 
-  /* line 327, ../sass/_custom.scss */
+  /* line 328, ../sass/_custom.scss */
   .elearning-user-info {
     padding: 10px 16px 10px 16px;
   }
 
-  /* line 333, ../sass/_custom.scss */
+  /* line 334, ../sass/_custom.scss */
   .elearning-doc-image {
     display: block;
   }
+}
+/* line 346, ../sass/_custom.scss */
+.el-webcast-container .el-webcast-thumb {
+  position: relative;
+}
+/* line 350, ../sass/_custom.scss */
+.el-webcast-container .el-webcast-thumb .fa.fa-play-circle {
+  position: absolute;
+  color: #f1f1f1;
+  font-size: 40px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }

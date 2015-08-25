@@ -156,9 +156,10 @@ header.elearning-charcoal {
 		font-size: 22px;
 	}
 	
-	.glyphicon-triangle-bottom {
+	.fa.fa-caret-down {
 
 		color: $brand-elearning-orange;
+        font-size: 32px;
 	}
 }
 
@@ -335,5 +336,29 @@ footer .site-info {
         display: block;
     }
 
+
     
  }
+
+ .el-webcast-container {
+
+    
+    .el-webcast-thumb {
+
+        position: relative;
+        
+        .fa.fa-play-circle {
+
+            position: absolute;
+            color: $brand-elearning-silver;
+            font-size: 40px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+     
+        }
+    }
+
+    
+ }
+

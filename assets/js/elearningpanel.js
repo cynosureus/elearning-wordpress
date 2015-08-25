@@ -39,4 +39,26 @@ jQuery(document).ready(function(){
 
     }
 
+    jQuery(".el-webcast-thumb").click( function( event ){
+
+        event.preventDefault();
+
+    });
+
+    jQuery(".el-webcast-thumb").each( function(){
+
+        media_id = jQuery(this).attr('id').split('-').pop();
+
+        jQuery(this).fancybox({
+
+            width: 500,
+            height: 300,
+            href: "http://link.videoplatform.limelight.com/media/?mediaId=" + media_id +"&width=480&height=270&playerForm=HoverPlayer"
+
+        })
+
+    } );
+
+   
+
 });
