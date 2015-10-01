@@ -14,27 +14,21 @@ jQuery(document).ready(function(){
             transition: 'ease', 
             clickSelector: '.menu-toggle-panel', 
             distanceX: '70%', 
-            enableEscapeKey: true 
-        });
-
-        var loginPanel = jQuery('#login-panel').scotchPanel({
-            containerSelector: 'body', 
-            direction: 'right', 
-            duration: 300, 
-            transition: 'ease', 
-            clickSelector: '.login-toggle-panel', 
-            distanceX: '70%', 
             enableEscapeKey: true,
+            beforePanelOpen: function() {
 
+                doc_height = jQuery(document).height();
+                jQuery("#elearning-panel").css('height', doc_height );
+
+            }
+        
         });
-
 
         
         jQuery("#elearning-body").click(function(){
 
             elearningPanel.close();
-            loginPanel.close();
-
+           
         });
 
     }

@@ -1,0 +1,495 @@
+@font-face {
+    font-family: 'flamabook';
+    src: url('../fonts/flama/flama-book-webfont.eot');
+    src: url('../fonts/flama/flama-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/flama/flama-book-webfont.woff2') format('woff2'),
+         url('../fonts/flama/flama-book-webfont.woff') format('woff'),
+         url('../fonts/flama/flama-book-webfont.ttf') format('truetype'),
+         url('../fonts/flama/flama-book-webfont.svg#flamabook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'flamaultralight';
+    src: url('../fonts/flama/flama-ultralight-webfont.eot');
+    src: url('../fonts/flama/flama-ultralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/flama/flama-ultralight-webfont.woff2') format('woff2'),
+         url('../fonts/flama/flama-ultralight-webfont.woff') format('woff'),
+         url('../fonts/flama/flama-ultralight-webfont.ttf') format('truetype'),
+         url('../fonts/flama/flama-ultralight-webfont.svg#flamaultralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'flamalight';
+    src: url('../fonts/flama/flama-light-webfont.eot');
+    src: url('../fonts/flama/flama-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/flama/flama-light-webfont.woff2') format('woff2'),
+         url('../fonts/flama/flama-light-webfont.woff') format('woff'),
+         url('../fonts/flama/flama-light-webfont.ttf') format('truetype'),
+         url('../fonts/flama/flama-light-webfont.svg#flamalight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'flamalight_italic';
+    src: url('../fonts/flama/flama-lightitalic-webfont.eot');
+    src: url('../fonts/flama/flama-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/flama/flama-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/flama/flama-lightitalic-webfont.woff') format('woff'),
+         url('../fonts/flama/flama-lightitalic-webfont.ttf') format('truetype'),
+         url('../fonts/flama/flama-lightitalic-webfont.svg#flamalight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+body {
+	
+	font-family: $font-family-flamabook;
+}
+
+input {
+    
+    background: $brand-elearning-silver;
+    border-radius: 0;
+    border: 0;
+}
+
+input[type="text"], input[type="password"] {
+
+    background: $brand-elearning-silver;
+    border: 0;
+
+}
+
+input[type="submit"], button, .button {
+
+    background-color: #e1694a;
+    border-radius: 8px;
+    color: #fff;
+    padding: 5px 26px 5px 26px;
+    display: block;
+    border: none;
+
+}
+
+.elearning-charcoal {
+	
+	background: $brand-elearning-charcoal;
+	color: #fff;
+
+	
+
+}
+
+#login {
+    
+    background-color: #fff;
+
+    width: 100%;
+    padding-top: 0;
+
+    h1 {
+
+        display: none;
+    }
+
+    .message {
+
+        padding: 20px;
+    }
+    
+}
+
+footer {
+    
+    padding-top: 0;
+
+    .site-info {
+    
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-top: 10px solid #f1f1f1;
+    }
+}
+
+#backtoblog {
+    
+    display: none;
+}
+
+a.button {
+    
+    padding: 6px 0 6px 0;
+    text-align: center;
+}
+
+a.button:visited {
+    
+    color: #fff;
+}
+
+#el-login-top {
+    
+    padding-top: 20px; 
+    padding-left: 34px; 
+    background: #fff; 
+}
+
+.el-login-header {
+    
+    margin: 0;
+    font-size: 16px;
+    color: #e1694a;
+    padding-bottom: 10px;
+}
+
+.row.section-heading.el-login-frame {
+    
+    margin-top: 18px;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+    height: 10px;
+
+}
+
+.fa-elearning {
+    
+    font-size: 1.5em;
+    padding-left: 4px;
+
+
+}
+
+.elearning-black {
+	
+	background: $brand-elearning-black;
+	color: #fff;
+}
+
+.elearning-white {
+	
+	background: #fff;
+
+}
+
+.elearning-orange {
+    
+   background-image:
+    radial-gradient(
+      circle at top right,
+      #eb7a42,
+      #ee4f32
+    );
+
+    h1 {
+
+        color: #fff;
+        margin-top: 40px;
+    }
+
+
+}
+
+.lit-title {
+
+    h4 {
+
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+}
+
+.section-heading {
+
+    @include background-image( linear-gradient(to right, #ee4f32, $brand-elearning-orange) );
+    margin-bottom: 10px;
+
+    h3 {
+
+        color: #fff;
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+
+    }
+
+
+    
+
+
+
+    span.section-more {
+        
+        color: #fff;
+        font-size: 24px;
+        display: inline-block;
+        width: 24px;
+        line-height: 18px;
+        margin-left: 3px;
+
+    }
+}
+
+
+
+header.elearning-charcoal {
+	
+
+	height: 60px;
+	padding-top: 15px;
+	position: relative;
+
+	
+	img {
+
+		position: absolute;
+		transform: translate(-50%, -26%);
+		height: 60px;
+		
+
+	}
+}
+
+.elearning-dropdown.dropdown {
+    
+
+    width: 95%;
+    margin: 0;
+    left:0;
+    border-left: 4px solid $brand-elearning-orange;
+    top: 25%;
+
+	button {
+
+		width: 100%;
+		font-size: 22px;
+	}
+	
+	.fa.fa-caret-down {
+
+		color: $brand-elearning-orange;
+        font-size: 32px;
+	}
+}
+
+.elearning-section {
+    
+    ul {
+
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+
+        padding: 0 0 12px 25px;
+    }
+
+    .main-area {
+
+        padding-bottom: 20px;
+    }
+
+    a {
+
+        text-decoration: none;
+    }
+    
+}
+
+.elearning-section.materials {
+    
+    margin-top: 10px;
+}
+
+
+.elearning-section.discussion {
+    
+    li {
+
+        background: url(../images/elearning-discussion-bullet.png) no-repeat left top;
+
+    }
+}
+
+
+
+
+
+
+.elearning-section.site-branding {
+    
+    border-top-width: 0;
+
+}
+
+.elearning-login {
+    
+    .form-control {
+
+        width: 90%;
+    }
+}
+
+.elearning-doc-image {
+    
+    display: none;
+}
+
+
+ 
+.elearning-aside {
+
+    border-right: 10px solid $brand-elearning-silver;
+    display: block;
+
+    img {
+
+        display:none;
+    }
+
+    ul {
+
+        list-style-type: none;
+        padding-left: 10px;
+
+    }
+
+    ul.member-actions-menu {
+
+        padding-top: 20px;
+        padding-bottom: 40px;
+
+        li {
+
+            padding-bottom: 10px;
+        }
+    }
+
+    ul.product-categories-menu {
+
+        padding-top: 16px;
+
+        li {
+
+            padding-bottom: 36px;
+        }
+
+    }
+
+    .elearning-widget-area {
+
+        padding-bottom: 80%;
+
+        .widget {
+
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 40px;
+        }
+
+        .widget.widget_el_filters_widget {
+            ul {
+
+                margin: 0;
+                padding-left: 0;
+
+                li {
+
+                    padding-bottom: 20px;
+                    font-size: 14px;
+                }
+            }
+            
+        }
+
+        .widget.widget_el_products_dropdown {
+
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    padding: 0;
+
+    .el-filter-widget {
+        a {
+
+            color: $brand-elearning-orange;
+            text-decoration: none;
+            font-size: 18px;
+            font-style: italic;
+        }
+    }
+
+}
+
+
+
+
+.el-webcast-container {
+
+    
+    .el-webcast-thumb {
+
+        position: relative;
+        
+        .fa.fa-play-circle {
+
+            position: absolute;
+            color: $brand-elearning-silver;
+            font-size: 40px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+     
+        }
+    }
+}
+
+.el-webcast-container {
+    
+    padding-top: 20px;
+}
+
+.elearning-user-info {
+    
+    a {
+
+        color: #fff;
+    }
+}
+
+
+
+
+
+
+
+
+    
+ 
+

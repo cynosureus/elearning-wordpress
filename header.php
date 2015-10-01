@@ -31,45 +31,59 @@
 				 <div class = "elearning-charcoal elearning-mobile-header row">
 	            
 		             <div class = "col-xs-4 text-left">
-		              <span class="glyphicon glyphicon-menu-hamburger menu-toggle-panel" aria-hidden="true" style="font-size: 20px;"></span>   
+
+		             	<?php if ( get_the_title( get_the_ID() ) == 'elearning' ): ?>
+		              		<span class="glyphicon glyphicon-menu-hamburger menu-toggle-panel" aria-hidden="true" style="font-size: 20px; padding-top: 14px;"></span>   
+		            	<?php endif; ?>
 		            </div>
 
-		            <div class = "col-xs-4 text-center">
+		            <div class = "col-xs-4 text-center" id="cyno-logo-wrapper">
 		              
-		              <img src="<?= get_header_image(); ?>">
+		              <img src="<?= get_header_image(); ?>" id="cyno-logo">
 		                     
 		            </div>
 
 		           
 
+		           
+
 	          	</div>
 
-	          	 <div class="elearning-user-info elearning-charcoal row" id="user-info-panel">
+	          	<?php if ( is_user_logged_in() ): ?>
+
+	          	 <div class="elearning-user-info elearning-charcoal row" id="el-user-info-panel-desktop">
 	             
 	           
-	                	<div class="col-xs-6">
+	                	<div class="col-xs-6" id="el-user-name">
 	                		Welcome Dr. A Edwards
 	                	</div>
 
-	                	<div class="col-xs-6 text-right">
-	                		Customer Support | Sign Out
+	                	<div class="col-xs-6 text-right" id="el-user-support">
+	                		Customer Support | <a href="<?= wp_logout_url() ?>">Sign Out</a>
 	                	</div>
+
+	           
 
 	             
 	            
 	          	</div>
 
+
+
+
+	          	 <?php endif; ?>
+
 	          	 <div class="row elearning-section site-branding">
 	              
-		            <div class = "col-lg-12 elearning-white">
+		            <div class = "col-lg-12 elearning-orange elearning-bilboard">
 		              <div class="row">
-		                <div class="col-lg-6 col-xs-12">
+		                <div class="col-lg-7 col-xs-12">
 		                  <h1 class="site-title"><?php bloginfo('description'); ?></h1>
-		                  <img src="<?= get_template_directory_uri() ?>/assets/images/elearning_header.png">
+		                  <img src="<?= get_template_directory_uri() ?>/assets/images/Elearning_Main_Graphic_247.png">
 		                </div>
 
-		                <div class="col-lg-6 elearning-doc-image">
-		                  <img src="<?= get_template_directory_uri() ?>/assets/images/elearning-doc.jpg">
+		                <div class="col-lg-5 elearning-doc-image">
+		                  <img src="<?= get_template_directory_uri() ?>/assets/images/Elearning_Main_Graphic_woman.png">
 		                </div>
 		              </div>
 		            </div>
@@ -77,7 +91,6 @@
 	          	</div>
 			
 			</header><!-- #masthead -->
-
 
 
 			<div id="content" class="site-content">

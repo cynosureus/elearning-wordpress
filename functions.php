@@ -128,7 +128,7 @@ add_action( 'widgets_init', 'cynosure_elearning_widgets_init' );
  */
 function cynosure_elearning_scripts() {
 
-	wp_enqueue_script( 'bootstrapjs', get_template_directory_uri() . '/assets/js/bootstrap.min.js');
+	wp_enqueue_script( 'bootstrapjs', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array( 'jquery' ) );
 
 	wp_enqueue_style( 'cynosure_elearning-style', get_stylesheet_uri() );
 
@@ -155,7 +155,7 @@ function cynosure_elearning_scripts() {
 
 	wp_enqueue_style('font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
 
-	
+	wp_enqueue_script( 'elearning-theme', get_template_directory_uri() . '/assets/js/elearning-theme.js', array( 'jquery' ) );
 
 	wp_enqueue_script( 'elearning-panel', get_template_directory_uri() . '/assets/js/elearningpanel.js', array( 'jquery' ) );
 
@@ -189,3 +189,5 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+add_filter('show_admin_bar', '__return_false');

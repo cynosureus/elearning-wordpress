@@ -1,0 +1,133 @@
+@media (max-width: $screen-md-max) {
+
+    #el-user-info-panel-desktop {
+
+        display: none;
+    }
+
+    #login {
+
+        form {
+
+            max-width: 386px;
+
+            width: 92%;
+            margin: 0 auto;
+
+            label {
+
+                width: 100%;
+            }
+
+            input[type="text"], input[type="password"] {
+
+                width: 100%;
+            }
+
+            #el-submit {
+
+                display: none;
+            }
+
+            #wp-submit {
+
+                display: block;
+                margin-left: 0;
+            }
+
+            .forgetmenot {
+
+                width: 50%;
+            }
+
+            p.submit {
+
+                margin-top: 20px;
+                display: inline-block;
+
+            }
+
+            .forgetmenot {
+
+                display: inline-block;
+            }
+
+            #wp-submit {
+
+                margin-left: 0;
+            }
+
+
+        }
+
+        #nav {
+
+            display: none;
+        }
+
+        #lostpasswordform {
+
+            #wp-submit {
+
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+
+    }
+
+    #el-login-top {
+
+        padding-left: 15px;
+    }
+
+    
+
+    #el-lost-password {
+
+        padding-top: 10px;
+    }
+
+    .el-login-holder {
+
+        max-width: 386px;
+        margin: 0 auto;
+
+        .button {
+
+            width: 25%;
+        }
+    }
+
+
+    #el-login-bottom {
+
+        padding: 10px 15px 34px 15px;
+    }
+
+
+    #cyno-logo-wrapper {
+        
+        padding: 0;
+
+        #cyno-logo {
+
+            max-width: none;
+        }
+
+    }
+
+    .el-footer-pusher {
+
+        display: none;
+    }
+
+    
+    
+
+
+    
+
+    
+
+}

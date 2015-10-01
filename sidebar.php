@@ -16,8 +16,20 @@ if ( ! is_active_sidebar( 'elearning-main-sidebar' ) ) {
 		<div class = "col-lg-3 pull-left elearning-charcoal elearning-aside" id="elearning-panel">
 			<div id="secondary" class="widget-area" role="complementary">
 				<img src="<?=get_header_image() ?>" class="center-block logo-desktop">
+
 				<div class="elearning-widget-area">
-					<?php dynamic_sidebar( 'elearning-main-sidebar' ); ?>
+
+
+					<?php if (get_the_title() == 'elearning'): ?>
+
+						<?php dynamic_sidebar( 'elearning-main-sidebar' ); ?>
+
+					<?php else: ?>
+
+						<?php dynamic_sidebar( 'elearning-front-sidebar' ); ?>
+
+					<?php endif; ?>
+
 				</div>
 			</div><!-- #secondary -->
 

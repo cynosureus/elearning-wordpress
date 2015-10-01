@@ -59,9 +59,36 @@
 
 }
 
+
+
 body {
 	
 	font-family: $font-family-flamabook;
+}
+
+input {
+    
+    background: $brand-elearning-silver;
+    border-radius: 0;
+    border: 0;
+}
+
+input[type="text"], input[type="password"] {
+
+    background: $brand-elearning-silver;
+    border: 0;
+
+}
+
+input[type="submit"], button, .button {
+
+    background-color: #e1694a;
+    border-radius: 8px;
+    color: #fff;
+    padding: 5px 26px 5px 26px;
+    display: block;
+    border: none;
+
 }
 
 .elearning-charcoal {
@@ -69,19 +96,100 @@ body {
 	background: $brand-elearning-charcoal;
 	color: #fff;
 
-	a {
+    .el-filter-widget {
 
-		color: #fff;
-		text-decoration: none;
-		font-size: 18px;
-	}
+        a {
+
+            color: $brand-elearning-orange;
+            text-decoration: none;
+            font-size: 18px;
+            font-style: italic;
+        }
+
+    }
+
+	
 
 }
+
+#login {
+    
+    background-color: #fff;
+
+    width: 100%;
+    padding-top: 0;
+
+    h1 {
+
+        display: none;
+    }
+    
+}
+
+footer {
+    
+    padding-top: 10px;
+
+    .site-info {
+    
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
+
+#backtoblog {
+    
+    display: none;
+}
+
+a.button {
+    
+    padding: 6px 0 6px 0;
+    text-align: center;
+}
+
+a.button:visited {
+    
+    color: #fff;
+}
+
+#el-login-top {
+    
+    padding-top: 20px; 
+    padding-left: 34px; 
+    background: #fff; 
+}
+
+.el-login-header {
+    
+    margin: 0;
+    font-size: 16px;
+    color: #e1694a;
+    padding-bottom: 10px;
+}
+
+.row.section-heading.el-login-frame {
+    
+    margin-top: 18px;
+    margin-bottom: 0;
+    margin-right: 0;
+    height: 10px;
+}
+
+
+
+#content {
+    
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
 
 .fa-elearning {
     
     font-size: 1.5em;
     padding-left: 4px;
+
 
 }
 
@@ -97,16 +205,45 @@ body {
 
 }
 
+.elearning-orange {
+    
+   background-image:
+    radial-gradient(
+      circle at top right,
+      #eb7a42,
+      #ee4f32
+    );
+
+    h1 {
+
+        color: #fff;
+        margin-top: 40px;
+    }
+
+
+}
+
+.lit-title {
+
+    h4 {
+
+        font-size: 12px;
+    }
+
+}
+
 .section-heading {
 
     @include background-image( linear-gradient(to right, #ee4f32, $brand-elearning-orange) );
     margin-bottom: 10px;
 
-    h4 {
+    h3 {
 
         color: #fff;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
 
 
     }
@@ -141,10 +278,16 @@ header.elearning-charcoal {
 	}
 }
 
+.elearning-aside {
+    
+    padding: 0;
+    
+}
+
 .elearning-dropdown.dropdown {
     
-    position: absolute;
-    width: 98%;
+
+    width: 95%;
     margin: 0;
     left:0;
     border-left: 4px solid $brand-elearning-orange;
@@ -180,16 +323,11 @@ header.elearning-charcoal {
 
 }
 
-
-
-.elearning-section.materials{ 
-
-    li {
-        
-        background: url(../images/elearning-lit-bullet.png) no-repeat left top;
-
-    }
+.elearning-section.materials {
+    
+    margin-top: 10px;
 }
+
 
 .elearning-section.discussion {
     
@@ -199,9 +337,6 @@ header.elearning-charcoal {
 
     }
 }
-
-
-
 
 
 
@@ -224,12 +359,8 @@ header.elearning-charcoal {
     display: none;
 }
 
-footer .site-info {
-    
-    padding-top: 8px;
-    padding-bottom: 8px;
-}
 
+ 
 .elearning-aside {
 
     border-right: 10px solid $brand-elearning-silver;
@@ -271,76 +402,40 @@ footer .site-info {
 
     .elearning-widget-area {
 
-        padding-top: 70%;
+        padding-bottom: 80%;
+
+        .widget {
+
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 40px;
+        }
+
+        .widget.widget_el_filters_widget {
+            ul {
+
+                margin: 0;
+                padding-left: 0;
+
+                li {
+
+                    padding-bottom: 20px;
+                    font-size: 14px;
+                }
+            }
+            
+        }
+
+        .widget.widget_el_products_dropdown {
+
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
 
 }
 
-@media (min-width: $screen-lg-min) {
-    
-    .elearning-mobile-header {
-
-    	display: none;
-    }
-
-    .elearning-aside {
-
-        display: block;
-
-        img {
-
-            display: block;
-        }
-
-        .ul-member-actions-menu {
-
-            padding-top: 76px;
-        }
-    }
-
-    .elearning-login  {
-
-    	display: block;
-        font-weight: bold;
-
-        .form-inline {
-
-        	input {
-
-        		width: 74%;
-
-        	}
-
-        	label {
-                
-        		width: 20%;
-                margin-right: 10px;
-
-        	}
-
-        	button {
-
-        		width: 80%;
-        	}
-        }
-    }
-
-    .elearning-user-info {
-
-        padding: 10px 16px 10px 16px;
-
-    }
-
-    .elearning-doc-image {
-
-        display: block;
-    }
-
-
-    
- }
-
- .el-webcast-container {
+.el-webcast-container {
 
     
     .el-webcast-thumb {
@@ -354,11 +449,18 @@ footer .site-info {
             font-size: 40px;
             left: 50%;
             top: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%)
      
         }
     }
+}
+
+#wp-submit {
+
+    display: none;
+}
+
 
     
- }
+ 
 

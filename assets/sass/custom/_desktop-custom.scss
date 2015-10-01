@@ -1,0 +1,198 @@
+@media (min-width: $screen-lg-min) {
+    
+    .elearning-mobile-header {
+
+    	display: none;
+    }
+
+    .elearning-aside {
+
+        display: block;
+
+        img {
+
+            display: block;
+        }
+
+        
+    }
+
+    .elearning-user-info {
+
+        padding: 10px 16px 10px 16px;
+
+    }
+
+    .elearning-doc-image {
+
+        display: block;
+    }
+
+    .elearning-orange.elearning-bilboard {
+
+        position: relative;
+        height: 256px;
+
+        .elearning-doc-image {
+
+           padding: 0;
+           text-align: right;
+        }
+    }
+
+    #login {
+
+        
+
+        .message {
+
+            margin-top: 14px;
+        }
+
+        form {
+
+            padding: 20px 20px 0 20px;
+        }
+
+        #nav {
+
+            display: none;
+        }
+
+        #login_error {
+
+            padding-left: 34px;
+        }
+
+    
+        #loginform {
+
+
+
+            p {
+
+                display: inline;
+            }
+
+            p.forgetmenot {
+
+                display: inline;
+                padding-top: 16px;
+                padding-bottom: 26px;
+            }
+        
+            input[type="text"], input[type="password"] {
+
+                
+                width: 90%;
+                display: inline;
+
+            }
+
+            input[type="submit"] {
+
+                
+                top: 338px;
+                margin-left: 14px;
+                margin-top: 16px;
+
+            }
+
+            label {
+
+               width: 34%;
+              
+               padding-left: 14px;
+               padding-right: 14px;
+               
+            }
+
+
+
+            
+
+            p.submit {
+
+                display: inline;
+            }
+
+        }
+        #loginform {
+            
+            #wp-submit {
+
+                display: none;
+            }
+
+        }
+
+        #lostpasswordform {
+
+            #wp-submit {
+
+                display: inline;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            #user_login {
+
+                width: 400px;
+            }
+
+           
+        }
+        
+
+        #el-submit {
+
+            display: inline;
+            margin-top: 0;
+    vertical-align: bottom;
+    margin-bottom: 5px;
+            
+        }
+    }
+
+    #el-lost-password {
+
+        padding-left: 34px;
+        padding-top: 10px;
+    }
+
+    #el-not-user {
+
+        padding-left: 34px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #el-sign-up {
+
+        .button {
+            margin-left: 34px;
+            width: 14%;
+        }
+    }
+
+    #el-login-bottom {
+
+        padding: 0 0 34px 0;
+    }
+
+    #el-user-info-panel-mobile {
+
+        display: none;
+    }
+
+    .el-footer-pusher {
+
+        background: $brand-elearning-charcoal;
+        border-right: 10px solid $brand-elearning-silver;
+        height: 46px;
+
+    }
+
+
+
+}
