@@ -110,8 +110,18 @@ function cynosure_elearning_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name'          => esc_html__( 'Front Page Sidebar', 'cynosure_elearning' ),
-		'id'            => 'elearning-front-sidebar',
+		'name'          => esc_html__( 'Default Sidebar', 'cynosure_elearning' ),
+		'id'            => 'elearning-default-sidebar',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Blank Sidebar', 'cynosure_elearning' ),
+		'id'            => 'elearning-blank-sidebar',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
@@ -157,8 +167,6 @@ function cynosure_elearning_scripts() {
 
 	wp_enqueue_script( 'elearning-theme', get_template_directory_uri() . '/assets/js/elearning-theme.js', array( 'jquery' ) );
 
-	wp_enqueue_script( 'elearning-panel', get_template_directory_uri() . '/assets/js/elearningpanel.js', array( 'jquery' ) );
-
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -191,3 +199,99 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 add_filter('show_admin_bar', '__return_false');
+
+
+function elearning_page_sidebar_selector() {
+
+	$screens = array( 'page' );
+
+	foreach ( $screens as $screen ) {
+
+		add_meta_box(
+			'elearning_sidebar_selector',
+			__( 'Select Sidebar', 'myplugin_textdomain' ),
+			'elearning_page_sidebar_selector_func',
+			$screen
+		);
+	}
+}
+add_action( 'add_meta_boxes', 'elearning_page_sidebar_selector' );
+
+function elearning_page_sidebar_selector_func() {
+
+	wp_nonce_field( 'elearning_sidebar_metabox_data', 'elearning_sidebar_nonce' );
+
+
+	$value = get_post_meta( get_the_ID(), 'elearning_page_sidebar', true );
+	
+	echo '<label for="myplugin_new_field">';
+	
+	echo '</label> ';
+	echo '<select name="elearning_page_sidebar_selector">';
+	echo '<option value="">Select Sidebar</option>';
+
+	foreach ( $GLOBALS['wp_registered_sidebars'] as $sidebar ) {
+
+		$selected = '';
+
+		if ( $value ==  $sidebar['id'] ) {
+
+			$selected = 'selected';
+		}
+
+		echo '<option value="' . $sidebar['id'] . '" ' . $selected . '>' . $sidebar['name'] . '</option>';
+
+	}
+	
+	echo '</select>';
+
+}
+
+function elearning_page_sidebar_selector_save() {
+
+
+
+	if ( ! isset( $_POST['elearning_sidebar_nonce'] ) ) {
+		return;
+	}
+
+	// Verify that the nonce is valid.
+	if ( ! wp_verify_nonce( $_POST['elearning_sidebar_nonce'], 'elearning_sidebar_metabox_data' ) ) {
+
+
+		return;
+	}
+
+		
+
+	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+		return;
+	}
+
+	if ( isset( $_POST['post_type'] ) && 'page' == $_POST['post_type'] ) {
+
+		if ( ! current_user_can( 'edit_page', $post_id ) ) {
+			return;
+		}
+
+	} else {
+
+		if ( ! current_user_can( 'edit_post', $post_id ) ) {
+			return;
+		}
+	}
+
+	if( ! isset( $_POST['elearning_page_sidebar_selector'] ) ) {
+
+		return;
+	}
+
+	$sidebar = sanitize_text_field( $_POST['elearning_page_sidebar_selector'] );
+
+
+	update_post_meta( get_the_ID(), 'elearning_page_sidebar', $sidebar);
+
+}
+
+add_action( 'save_post', 'elearning_page_sidebar_selector_save');
+

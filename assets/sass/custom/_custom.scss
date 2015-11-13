@@ -61,6 +61,7 @@
 
 
 
+
 body {
 	
 	font-family: $font-family-flamabook;
@@ -80,7 +81,7 @@ input[type="text"], input[type="password"] {
 
 }
 
-input[type="submit"], button, .button {
+input[type="submit"], input[type="button"], button, .button, #buddypress input[type=submit], #buddypress input[type=submit]:hover {
 
     background-color: #e1694a;
     border-radius: 8px;
@@ -95,8 +96,6 @@ input[type="submit"], button, .button {
 	
 	background: $brand-elearning-charcoal;
 	color: #fff;
-
-	
 
 }
 
@@ -123,11 +122,12 @@ footer {
     
     padding-top: 0;
 
+
     .site-info {
     
         padding-top: 8px;
         padding-bottom: 8px;
-        border-top: 10px solid #f1f1f1;
+        border-top: 10px solid $brand-elearning-silver;
     }
 }
 
@@ -164,7 +164,7 @@ a.button:visited {
 
 .row.section-heading.el-login-frame {
     
-    margin-top: 18px;
+ 
     margin-bottom: 0;
     margin-right: 0;
     margin-left: 0;
@@ -190,6 +190,14 @@ a.button:visited {
 	
 	background: #fff;
 
+    h3 {
+
+        margin-left: 5px;
+        color: $brand-elearning-orange;
+    }
+
+    margin-bottom: 30px;
+
 }
 
 .elearning-orange {
@@ -197,8 +205,8 @@ a.button:visited {
    background-image:
     radial-gradient(
       circle at top right,
-      #eb7a42,
-      #ee4f32
+      #647c8f,
+      #13171a
     );
 
     h1 {
@@ -210,20 +218,10 @@ a.button:visited {
 
 }
 
-.lit-title {
-
-    h4 {
-
-        font-size: 14px;
-        font-weight: bold;
-    }
-
-}
-
 .section-heading {
 
     @include background-image( linear-gradient(to right, #ee4f32, $brand-elearning-orange) );
-    margin-bottom: 10px;
+    
 
     h3 {
 
@@ -235,11 +233,6 @@ a.button:visited {
 
 
     }
-
-
-    
-
-
 
     span.section-more {
         
@@ -320,10 +313,6 @@ header.elearning-charcoal {
     
 }
 
-.elearning-section.materials {
-    
-    margin-top: 10px;
-}
 
 
 .elearning-section.discussion {
@@ -402,7 +391,7 @@ header.elearning-charcoal {
 
     .elearning-widget-area {
 
-        padding-bottom: 80%;
+     
 
         .widget {
 
@@ -460,13 +449,24 @@ header.elearning-charcoal {
         .fa.fa-play-circle {
 
             position: absolute;
-            color: $brand-elearning-silver;
+            color: $brand-elearning-orange;
             font-size: 40px;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
      
         }
+
+        .el-webcast-thumbnail-wrapper {
+
+            width: 100%;
+            border: 2px solid $brand-elearning-silver;
+            height: 120px;
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+
+
     }
 }
 
@@ -481,6 +481,116 @@ header.elearning-charcoal {
 
         color: #fff;
     }
+}
+
+
+.el-dBoxItem-row {
+    
+    margin: 0 auto;
+
+    .el-dBoxItem-container {
+        
+        border: 2px solid $brand-elearning-silver;
+        margin-top: 5px;
+        margin: 5px 10px 5px 5px;
+        max-width: 360px;
+
+        .el-dBoxItem-thumbnail-container {
+
+            height: 160px;
+            background: #fff;
+            border: 2px solid $brand-elearning-silver;
+            margin: 2px 0 2px 2px;
+            padding: 0;
+
+            .el-dBoxItem-thumbnail {
+
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        .el-dBoxItem-title {
+
+            margin-right: -2px;
+            padding: 0 5px 5px;
+            position: relative;
+        }
+
+        .el-dBoxItem-download {
+
+            width: 94%;
+            background: #fbb671;
+            color: $brand-elearning-orange;
+            font-size: 14px;
+            padding: 5px 0 5px 0;
+            margin: 0 auto;
+            position: absolute;
+            top: 120px;
+            left: 7px;
+
+            a {
+
+                color: #fff;
+                text-transform: uppercase;
+            }
+        }
+
+
+    }
+
+    .el-dBoxItem-last-col {
+
+        margin-right: 0;
+    }
+
+}
+
+.el-button {
+
+    width: 94%;
+    background: #fbb671;
+    color: $brand-elearning-orange;
+    font-size: 14px;
+    padding: 5px 0 5px 0;
+    margin-bottom: 10px;
+    max-width: 200px;
+    
+    
+
+    a {
+
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+}
+
+.el-button.download {
+    
+    position: absolute;
+    top: 120px;
+    left: 7px;
+    margin: 0 auto;
+}
+
+#buddypress {
+    
+    background: #fff;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-top: 4px;
+    padding-bottom: 15px;
+    height: 100vh;
+    #item-nav, #subnav, form, .profile {
+
+        padding-left: 15px;
+    }
+
+
+
 }
 
 

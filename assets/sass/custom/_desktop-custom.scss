@@ -31,7 +31,8 @@
     .elearning-orange.elearning-bilboard {
 
         position: relative;
-        height: 256px;
+        height: 276px;
+        border-bottom: 4px solid $brand-elearning-silver;
 
         .elearning-doc-image {
 
@@ -71,7 +72,7 @@
 
             p {
 
-                display: inline;
+                display: block;
             }
 
             p.forgetmenot {
@@ -79,6 +80,11 @@
                 display: inline;
                 padding-top: 16px;
                 padding-bottom: 26px;
+
+                label {
+
+                    width: 51%;
+                }
             }
         
             input[type="text"], input[type="password"] {
@@ -100,7 +106,7 @@
 
             label {
 
-               width: 34%;
+               width: 75%;
               
                padding-left: 14px;
                padding-right: 14px;
@@ -121,7 +127,9 @@
             
             #wp-submit {
 
-                display: none;
+                display: block;
+                display: inline-block;
+          
             }
 
         }
@@ -148,8 +156,8 @@
 
             display: inline;
             margin-top: 0;
-    vertical-align: bottom;
-    margin-bottom: 5px;
+            vertical-align: bottom;
+            margin-bottom: 5px;
             
         }
     }
@@ -182,7 +190,7 @@
 
     #el-user-info-panel-mobile {
 
-        display: none;
+        font-size: 18px;
     }
 
     .el-footer-pusher {
@@ -191,6 +199,21 @@
         border-right: 10px solid $brand-elearning-silver;
         height: 46px;
 
+
+    }
+
+    
+
+    #elearning-body:after {
+
+        content: "";
+        display: block;
+    }
+
+    #elearning-panel:after {
+        
+        content: "";
+        display:block;
     }
 
 

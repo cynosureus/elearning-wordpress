@@ -25,25 +25,26 @@
 	<div class = "row container-main">
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'cynosure_elearning' ); ?></a>
 
-		<div class="col-lg-9 col-md-12 pull-right" id="elearning-body">
+		<?php global $pagenow; ?>
+
+		<div class="col-lg-9 col-md-12 pull-right" id="elearning-body" style="<?= $pagenow== 'wp-login.php' ? 'background-color: #fff' : '' ?>">
 			<header id="masthead" class="site-header" role="banner">
 
 				 <div class = "elearning-charcoal elearning-mobile-header row">
 	            
 		             <div class = "col-xs-4 text-left">
 
-		             	<?php if ( get_the_title( get_the_ID() ) == 'elearning' ): ?>
+		             	<?php if ( get_the_title( get_the_ID() ) == 'elearning' || get_the_title( get_the_ID() ) == 'Home' ): ?>
 		              		<span class="glyphicon glyphicon-menu-hamburger menu-toggle-panel" aria-hidden="true" style="font-size: 20px; padding-top: 14px;"></span>   
 		            	<?php endif; ?>
 		            </div>
 
 		            <div class = "col-xs-4 text-center" id="cyno-logo-wrapper">
 		              
-		              <img src="<?= get_header_image(); ?>" id="cyno-logo">
+		              <a href="<?= home_url() ?>"><img src="<?= get_header_image(); ?>" id="cyno-logo"></a>
 		                     
 		            </div>
 
-		           
 
 		           
 
@@ -55,12 +56,16 @@
 	             
 	           
 	                	<div class="col-xs-6" id="el-user-name">
-	                		Welcome Dr. A Edwards
+	              
+	                		Welcome <a href="<?= bp_loggedin_user_domain() ?>"><?= ucfirst( xprofile_get_field_data(1, get_current_user_id() ) ) ?> <?= ucfirst( xprofile_get_field_data( 2, get_current_user_id() ) ) ?> (View Profile)</a>
 	                	</div>
 
 	                	<div class="col-xs-6 text-right" id="el-user-support">
-	                		Customer Support | <a href="<?= wp_logout_url() ?>">Sign Out</a>
+	                		Customer Support | <a href="<?= wp_logout_url() ?>">Sign Out</a> <?= current_user_can('administrator') ? ' | <a href= "' . admin_url() . '" >Admin</a>' : '' ?>
 	                	</div>
+
+
+
 
 	           
 
@@ -83,7 +88,7 @@
 		                </div>
 
 		                <div class="col-lg-5 elearning-doc-image">
-		                  <img src="<?= get_template_directory_uri() ?>/assets/images/Elearning_Main_Graphic_woman.png">
+		                  <img src="<?= get_template_directory_uri() ?>/assets/images/Elearning_WomanHeroImage.png">
 		                </div>
 		              </div>
 		            </div>
@@ -94,3 +99,5 @@
 
 
 			<div id="content" class="site-content">
+
+

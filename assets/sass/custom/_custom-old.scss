@@ -60,6 +60,27 @@
 }
 
 
+html, body {
+    
+    height: 100%;
+}
+
+.container-main {
+    
+    min-height: 100%;
+
+}
+
+.site.container {
+    
+    height: 100%;
+}
+
+.container-main:after {
+    
+    content: "";
+    display: block;
+}
 
 body {
 	
@@ -80,7 +101,7 @@ input[type="text"], input[type="password"] {
 
 }
 
-input[type="submit"], button, .button {
+input[type="submit"], input[type="button"], button, .button, #buddypress input[type=submit], #buddypress input[type=submit]:hover {
 
     background-color: #e1694a;
     border-radius: 8px;
@@ -95,18 +116,6 @@ input[type="submit"], button, .button {
 	
 	background: $brand-elearning-charcoal;
 	color: #fff;
-
-    .el-filter-widget {
-
-        a {
-
-            color: $brand-elearning-orange;
-            text-decoration: none;
-            font-size: 18px;
-            font-style: italic;
-        }
-
-    }
 
 	
 
@@ -123,17 +132,24 @@ input[type="submit"], button, .button {
 
         display: none;
     }
+
+    .message {
+
+        padding: 20px;
+    }
     
 }
 
 footer {
     
-    padding-top: 10px;
+    padding-top: 0;
+
 
     .site-info {
     
         padding-top: 8px;
         padding-bottom: 8px;
+        border-top: 10px solid $brand-elearning-silver;
     }
 }
 
@@ -170,20 +186,13 @@ a.button:visited {
 
 .row.section-heading.el-login-frame {
     
-    margin-top: 18px;
+ 
     margin-bottom: 0;
     margin-right: 0;
+    margin-left: 0;
     height: 10px;
+
 }
-
-
-
-#content {
-    
-    margin-left: -15px;
-    margin-right: -15px;
-}
-
 
 .fa-elearning {
     
@@ -227,7 +236,8 @@ a.button:visited {
 
     h4 {
 
-        font-size: 12px;
+        font-size: 14px;
+        font-weight: bold;
     }
 
 }
@@ -248,6 +258,11 @@ a.button:visited {
 
     }
 
+
+    
+
+
+
     span.section-more {
         
         color: #fff;
@@ -259,6 +274,8 @@ a.button:visited {
 
     }
 }
+
+
 
 header.elearning-charcoal {
 	
@@ -276,12 +293,6 @@ header.elearning-charcoal {
 		
 
 	}
-}
-
-.elearning-aside {
-    
-    padding: 0;
-    
 }
 
 .elearning-dropdown.dropdown {
@@ -319,13 +330,21 @@ header.elearning-charcoal {
         padding: 0 0 12px 25px;
     }
 
-    
+    .main-area {
 
+        padding-bottom: 20px;
+    }
+
+    a {
+
+        text-decoration: none;
+    }
+    
 }
 
 .elearning-section.materials {
     
-    margin-top: 10px;
+    border-top: 10px solid $brand-elearning-silver;    
 }
 
 
@@ -337,6 +356,9 @@ header.elearning-charcoal {
 
     }
 }
+
+
+
 
 
 
@@ -433,7 +455,22 @@ header.elearning-charcoal {
         }
     }
 
+    padding: 0;
+
+    .el-filter-widget {
+        a {
+
+            color: $brand-elearning-orange;
+            text-decoration: none;
+            font-size: 18px;
+            font-style: italic;
+        }
+    }
+
 }
+
+
+
 
 .el-webcast-container {
 
@@ -449,16 +486,41 @@ header.elearning-charcoal {
             font-size: 40px;
             left: 50%;
             top: 50%;
-            transform: translate(-50%, -50%)
+            transform: translate(-50%, -50%);
      
         }
     }
 }
 
-#wp-submit {
-
-    display: none;
+.el-webcast-container {
+    
+    padding-top: 20px;
 }
+
+.elearning-user-info {
+    
+    a {
+
+        color: #fff;
+    }
+}
+
+#register-page {
+    
+    background-color: #fff;
+}
+
+#elearning-body {
+    
+    background-color: #fff;
+}
+
+
+
+
+
+
+
 
 
     

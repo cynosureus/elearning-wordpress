@@ -2365,13 +2365,13 @@ pre code {
 @media (min-width: 768px) {
   /* line 10, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_grid.scss */
   .container {
-    width: 750px;
+    width: 100%;
   }
 }
 @media (min-width: 992px) {
   /* line 10, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_grid.scss */
   .container {
-    width: 970px;
+    width: 100%;
   }
 }
 @media (min-width: 1200px) {
@@ -8797,26 +8797,26 @@ button.close {
   font-weight: normal;
   font-style: normal;
 }
-/* line 64, ../sass/custom/_custom.scss */
+/* line 65, ../sass/custom/_custom.scss */
 body {
   font-family: "flamabook", Arial, sans-serif;
 }
 
-/* line 69, ../sass/custom/_custom.scss */
+/* line 70, ../sass/custom/_custom.scss */
 input {
   background: #f1f1f1;
   border-radius: 0;
   border: 0;
 }
 
-/* line 76, ../sass/custom/_custom.scss */
+/* line 77, ../sass/custom/_custom.scss */
 input[type="text"], input[type="password"] {
   background: #f1f1f1;
   border: 0;
 }
 
-/* line 83, ../sass/custom/_custom.scss */
-input[type="submit"], button, .button {
+/* line 84, ../sass/custom/_custom.scss */
+input[type="submit"], input[type="button"], button, .button, #buddypress input[type=submit], #buddypress input[type=submit]:hover {
   background-color: #e1694a;
   border-radius: 8px;
   color: #fff;
@@ -8825,28 +8825,28 @@ input[type="submit"], button, .button {
   border: none;
 }
 
-/* line 94, ../sass/custom/_custom.scss */
+/* line 95, ../sass/custom/_custom.scss */
 .elearning-charcoal {
   background: #3e3e3e;
   color: #fff;
 }
 
-/* line 103, ../sass/custom/_custom.scss */
+/* line 102, ../sass/custom/_custom.scss */
 #login {
   background-color: #fff;
   width: 100%;
   padding-top: 0;
 }
-/* line 110, ../sass/custom/_custom.scss */
+/* line 109, ../sass/custom/_custom.scss */
 #login h1 {
   display: none;
 }
-/* line 115, ../sass/custom/_custom.scss */
+/* line 114, ../sass/custom/_custom.scss */
 #login .message {
   padding: 20px;
 }
 
-/* line 122, ../sass/custom/_custom.scss */
+/* line 121, ../sass/custom/_custom.scss */
 footer {
   padding-top: 0;
 }
@@ -8890,7 +8890,6 @@ a.button:visited {
 
 /* line 165, ../sass/custom/_custom.scss */
 .row.section-heading.el-login-frame {
-  margin-top: 18px;
   margin-bottom: 0;
   margin-right: 0;
   margin-left: 0;
@@ -8912,25 +8911,25 @@ a.button:visited {
 /* line 189, ../sass/custom/_custom.scss */
 .elearning-white {
   background: #fff;
+  margin-bottom: 30px;
+}
+/* line 193, ../sass/custom/_custom.scss */
+.elearning-white h3 {
+  margin-left: 5px;
+  color: #D77A27;
 }
 
-/* line 195, ../sass/custom/_custom.scss */
+/* line 203, ../sass/custom/_custom.scss */
 .elearning-orange {
-  background-image: radial-gradient(circle at top right, #eb7a42, #ee4f32);
+  background-image: radial-gradient(circle at top right, #647c8f, #13171a);
 }
-/* line 204, ../sass/custom/_custom.scss */
+/* line 212, ../sass/custom/_custom.scss */
 .elearning-orange h1 {
   color: #fff;
   margin-top: 40px;
 }
 
-/* line 215, ../sass/custom/_custom.scss */
-.lit-title h4 {
-  font-size: 14px;
-  font-weight: bold;
-}
-
-/* line 223, ../sass/custom/_custom.scss */
+/* line 221, ../sass/custom/_custom.scss */
 .section-heading {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlNGYzMiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Q3N2EyNyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
@@ -8938,9 +8937,8 @@ a.button:visited {
   background-image: -moz-linear-gradient(left, #ee4f32, #d77a27);
   background-image: -webkit-linear-gradient(left, #ee4f32, #d77a27);
   background-image: linear-gradient(to right, #ee4f32, #d77a27);
-  margin-bottom: 10px;
 }
-/* line 228, ../sass/custom/_custom.scss */
+/* line 226, ../sass/custom/_custom.scss */
 .section-heading h3 {
   color: #fff;
   font-size: 12px;
@@ -8948,7 +8946,7 @@ a.button:visited {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 244, ../sass/custom/_custom.scss */
+/* line 237, ../sass/custom/_custom.scss */
 .section-heading span.section-more {
   color: #fff;
   font-size: 24px;
@@ -8958,20 +8956,20 @@ a.button:visited {
   margin-left: 3px;
 }
 
-/* line 258, ../sass/custom/_custom.scss */
+/* line 251, ../sass/custom/_custom.scss */
 header.elearning-charcoal {
   height: 60px;
   padding-top: 15px;
   position: relative;
 }
-/* line 266, ../sass/custom/_custom.scss */
+/* line 259, ../sass/custom/_custom.scss */
 header.elearning-charcoal img {
   position: absolute;
   transform: translate(-50%, -26%);
   height: 60px;
 }
 
-/* line 276, ../sass/custom/_custom.scss */
+/* line 269, ../sass/custom/_custom.scss */
 .elearning-dropdown.dropdown {
   width: 95%;
   margin: 0;
@@ -8979,118 +8977,109 @@ header.elearning-charcoal img {
   border-left: 4px solid #D77A27;
   top: 25%;
 }
-/* line 285, ../sass/custom/_custom.scss */
+/* line 278, ../sass/custom/_custom.scss */
 .elearning-dropdown.dropdown button {
   width: 100%;
   font-size: 22px;
 }
-/* line 291, ../sass/custom/_custom.scss */
+/* line 284, ../sass/custom/_custom.scss */
 .elearning-dropdown.dropdown .fa.fa-caret-down {
   color: #D77A27;
   font-size: 32px;
 }
 
-/* line 300, ../sass/custom/_custom.scss */
+/* line 293, ../sass/custom/_custom.scss */
 .elearning-section ul {
   list-style-type: none;
   padding: 0;
 }
-/* line 306, ../sass/custom/_custom.scss */
+/* line 299, ../sass/custom/_custom.scss */
 .elearning-section li {
   padding: 0 0 12px 25px;
 }
-/* line 311, ../sass/custom/_custom.scss */
+/* line 304, ../sass/custom/_custom.scss */
 .elearning-section .main-area {
   padding-bottom: 20px;
 }
-/* line 316, ../sass/custom/_custom.scss */
+/* line 309, ../sass/custom/_custom.scss */
 .elearning-section a {
   text-decoration: none;
 }
 
-/* line 323, ../sass/custom/_custom.scss */
-.elearning-section.materials {
-  margin-top: 10px;
-}
-
-/* line 331, ../sass/custom/_custom.scss */
+/* line 320, ../sass/custom/_custom.scss */
 .elearning-section.discussion li {
   background: url(../images/elearning-discussion-bullet.png) no-repeat left top;
 }
 
-/* line 343, ../sass/custom/_custom.scss */
+/* line 332, ../sass/custom/_custom.scss */
 .elearning-section.site-branding {
   border-top-width: 0;
 }
 
-/* line 351, ../sass/custom/_custom.scss */
+/* line 340, ../sass/custom/_custom.scss */
 .elearning-login .form-control {
   width: 90%;
 }
 
-/* line 357, ../sass/custom/_custom.scss */
+/* line 346, ../sass/custom/_custom.scss */
 .elearning-doc-image {
   display: none;
 }
 
-/* line 364, ../sass/custom/_custom.scss */
+/* line 353, ../sass/custom/_custom.scss */
 .elearning-aside {
   border-right: 10px solid #f1f1f1;
   display: block;
   padding: 0;
 }
-/* line 369, ../sass/custom/_custom.scss */
+/* line 358, ../sass/custom/_custom.scss */
 .elearning-aside img {
   display: none;
 }
-/* line 374, ../sass/custom/_custom.scss */
+/* line 363, ../sass/custom/_custom.scss */
 .elearning-aside ul {
   list-style-type: none;
   padding-left: 10px;
 }
-/* line 381, ../sass/custom/_custom.scss */
+/* line 370, ../sass/custom/_custom.scss */
 .elearning-aside ul.member-actions-menu {
   padding-top: 20px;
   padding-bottom: 40px;
 }
-/* line 386, ../sass/custom/_custom.scss */
+/* line 375, ../sass/custom/_custom.scss */
 .elearning-aside ul.member-actions-menu li {
   padding-bottom: 10px;
 }
-/* line 392, ../sass/custom/_custom.scss */
+/* line 381, ../sass/custom/_custom.scss */
 .elearning-aside ul.product-categories-menu {
   padding-top: 16px;
 }
-/* line 396, ../sass/custom/_custom.scss */
+/* line 385, ../sass/custom/_custom.scss */
 .elearning-aside ul.product-categories-menu li {
   padding-bottom: 36px;
 }
-/* line 403, ../sass/custom/_custom.scss */
-.elearning-aside .elearning-widget-area {
-  padding-bottom: 80%;
-}
-/* line 407, ../sass/custom/_custom.scss */
+/* line 396, ../sass/custom/_custom.scss */
 .elearning-aside .elearning-widget-area .widget {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 40px;
 }
-/* line 415, ../sass/custom/_custom.scss */
+/* line 404, ../sass/custom/_custom.scss */
 .elearning-aside .elearning-widget-area .widget.widget_el_filters_widget ul {
   margin: 0;
   padding-left: 0;
 }
-/* line 420, ../sass/custom/_custom.scss */
+/* line 409, ../sass/custom/_custom.scss */
 .elearning-aside .elearning-widget-area .widget.widget_el_filters_widget ul li {
   padding-bottom: 20px;
   font-size: 14px;
 }
-/* line 429, ../sass/custom/_custom.scss */
+/* line 418, ../sass/custom/_custom.scss */
 .elearning-aside .elearning-widget-area .widget.widget_el_products_dropdown {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 439, ../sass/custom/_custom.scss */
+/* line 428, ../sass/custom/_custom.scss */
 .elearning-aside .el-filter-widget a {
   color: #D77A27;
   text-decoration: none;
@@ -9098,18 +9087,26 @@ header.elearning-charcoal img {
   font-style: italic;
 }
 
-/* line 456, ../sass/custom/_custom.scss */
+/* line 445, ../sass/custom/_custom.scss */
 .el-webcast-container .el-webcast-thumb {
   position: relative;
 }
-/* line 460, ../sass/custom/_custom.scss */
+/* line 449, ../sass/custom/_custom.scss */
 .el-webcast-container .el-webcast-thumb .fa.fa-play-circle {
   position: absolute;
-  color: #f1f1f1;
+  color: #D77A27;
   font-size: 40px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+/* line 460, ../sass/custom/_custom.scss */
+.el-webcast-container .el-webcast-thumb .el-webcast-thumbnail-wrapper {
+  width: 100%;
+  border: 2px solid #f1f1f1;
+  height: 120px;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
 /* line 473, ../sass/custom/_custom.scss */
@@ -9120,6 +9117,98 @@ header.elearning-charcoal img {
 /* line 480, ../sass/custom/_custom.scss */
 .elearning-user-info a {
   color: #fff;
+}
+
+/* line 487, ../sass/custom/_custom.scss */
+.el-dBoxItem-row {
+  margin: 0 auto;
+}
+/* line 491, ../sass/custom/_custom.scss */
+.el-dBoxItem-row .el-dBoxItem-container {
+  border: 2px solid #f1f1f1;
+  margin-top: 5px;
+  margin: 5px 10px 5px 5px;
+  max-width: 360px;
+}
+/* line 498, ../sass/custom/_custom.scss */
+.el-dBoxItem-row .el-dBoxItem-container .el-dBoxItem-thumbnail-container {
+  height: 160px;
+  background: #fff;
+  border: 2px solid #f1f1f1;
+  margin: 2px 0 2px 2px;
+  padding: 0;
+}
+/* line 506, ../sass/custom/_custom.scss */
+.el-dBoxItem-row .el-dBoxItem-container .el-dBoxItem-thumbnail-container .el-dBoxItem-thumbnail {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* line 514, ../sass/custom/_custom.scss */
+.el-dBoxItem-row .el-dBoxItem-container .el-dBoxItem-title {
+  margin-right: -2px;
+  padding: 0 5px 5px;
+  position: relative;
+}
+/* line 521, ../sass/custom/_custom.scss */
+.el-dBoxItem-row .el-dBoxItem-container .el-dBoxItem-download {
+  width: 94%;
+  background: #fbb671;
+  color: #D77A27;
+  font-size: 14px;
+  padding: 5px 0 5px 0;
+  margin: 0 auto;
+  position: absolute;
+  top: 120px;
+  left: 7px;
+}
+/* line 533, ../sass/custom/_custom.scss */
+.el-dBoxItem-row .el-dBoxItem-container .el-dBoxItem-download a {
+  color: #fff;
+  text-transform: uppercase;
+}
+/* line 543, ../sass/custom/_custom.scss */
+.el-dBoxItem-row .el-dBoxItem-last-col {
+  margin-right: 0;
+}
+
+/* line 550, ../sass/custom/_custom.scss */
+.el-button {
+  width: 94%;
+  background: #fbb671;
+  color: #D77A27;
+  font-size: 14px;
+  padding: 5px 0 5px 0;
+  margin-bottom: 10px;
+  max-width: 200px;
+}
+/* line 562, ../sass/custom/_custom.scss */
+.el-button a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 571, ../sass/custom/_custom.scss */
+.el-button.download {
+  position: absolute;
+  top: 120px;
+  left: 7px;
+  margin: 0 auto;
+}
+
+/* line 579, ../sass/custom/_custom.scss */
+#buddypress {
+  background: #fff;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-top: 4px;
+  padding-bottom: 15px;
+  height: 100vh;
+}
+/* line 587, ../sass/custom/_custom.scss */
+#buddypress #item-nav, #buddypress #subnav, #buddypress form, #buddypress .profile {
+  padding-left: 15px;
 }
 
 @media (min-width: 1200px) {
@@ -9150,76 +9239,82 @@ header.elearning-charcoal img {
   /* line 31, ../sass/custom/_desktop-custom.scss */
   .elearning-orange.elearning-bilboard {
     position: relative;
-    height: 256px;
+    height: 276px;
+    border-bottom: 4px solid #f1f1f1;
   }
-  /* line 36, ../sass/custom/_desktop-custom.scss */
+  /* line 37, ../sass/custom/_desktop-custom.scss */
   .elearning-orange.elearning-bilboard .elearning-doc-image {
     padding: 0;
     text-align: right;
   }
 
-  /* line 47, ../sass/custom/_desktop-custom.scss */
+  /* line 48, ../sass/custom/_desktop-custom.scss */
   #login .message {
     margin-top: 14px;
   }
-  /* line 52, ../sass/custom/_desktop-custom.scss */
+  /* line 53, ../sass/custom/_desktop-custom.scss */
   #login form {
     padding: 20px 20px 0 20px;
   }
-  /* line 57, ../sass/custom/_desktop-custom.scss */
+  /* line 58, ../sass/custom/_desktop-custom.scss */
   #login #nav {
     display: none;
   }
-  /* line 62, ../sass/custom/_desktop-custom.scss */
+  /* line 63, ../sass/custom/_desktop-custom.scss */
   #login #login_error {
     padding-left: 34px;
   }
-  /* line 72, ../sass/custom/_desktop-custom.scss */
+  /* line 73, ../sass/custom/_desktop-custom.scss */
   #login #loginform p {
-    display: inline;
+    display: block;
   }
-  /* line 77, ../sass/custom/_desktop-custom.scss */
+  /* line 78, ../sass/custom/_desktop-custom.scss */
   #login #loginform p.forgetmenot {
     display: inline;
     padding-top: 16px;
     padding-bottom: 26px;
   }
   /* line 84, ../sass/custom/_desktop-custom.scss */
+  #login #loginform p.forgetmenot label {
+    width: 51%;
+  }
+  /* line 90, ../sass/custom/_desktop-custom.scss */
   #login #loginform input[type="text"], #login #loginform input[type="password"] {
     width: 90%;
     display: inline;
   }
-  /* line 92, ../sass/custom/_desktop-custom.scss */
+  /* line 98, ../sass/custom/_desktop-custom.scss */
   #login #loginform input[type="submit"] {
     top: 338px;
     margin-left: 14px;
     margin-top: 16px;
   }
-  /* line 101, ../sass/custom/_desktop-custom.scss */
+  /* line 107, ../sass/custom/_desktop-custom.scss */
   #login #loginform label {
-    width: 34%;
+    width: 75%;
     padding-left: 14px;
     padding-right: 14px;
   }
-  /* line 114, ../sass/custom/_desktop-custom.scss */
+  /* line 120, ../sass/custom/_desktop-custom.scss */
   #login #loginform p.submit {
     display: inline;
   }
-  /* line 122, ../sass/custom/_desktop-custom.scss */
+  /* line 128, ../sass/custom/_desktop-custom.scss */
   #login #loginform #wp-submit {
-    display: none;
+    display: block;
+    display: inline-block;
   }
-  /* line 131, ../sass/custom/_desktop-custom.scss */
+  /* line 139, ../sass/custom/_desktop-custom.scss */
   #login #lostpasswordform #wp-submit {
     display: inline;
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  /* line 138, ../sass/custom/_desktop-custom.scss */
+  /* line 146, ../sass/custom/_desktop-custom.scss */
   #login #lostpasswordform #user_login {
     width: 400px;
   }
-  /* line 147, ../sass/custom/_desktop-custom.scss */
+  /* line 155, ../sass/custom/_desktop-custom.scss */
   #login #el-submit {
     display: inline;
     margin-top: 0;
@@ -9227,40 +9322,64 @@ header.elearning-charcoal img {
     margin-bottom: 5px;
   }
 
-  /* line 157, ../sass/custom/_desktop-custom.scss */
+  /* line 165, ../sass/custom/_desktop-custom.scss */
   #el-lost-password {
     padding-left: 34px;
     padding-top: 10px;
   }
 
-  /* line 163, ../sass/custom/_desktop-custom.scss */
+  /* line 171, ../sass/custom/_desktop-custom.scss */
   #el-not-user {
     padding-left: 34px;
     padding-top: 10px;
     padding-bottom: 10px;
   }
 
-  /* line 172, ../sass/custom/_desktop-custom.scss */
+  /* line 180, ../sass/custom/_desktop-custom.scss */
   #el-sign-up .button {
     margin-left: 34px;
     width: 14%;
   }
 
-  /* line 178, ../sass/custom/_desktop-custom.scss */
+  /* line 186, ../sass/custom/_desktop-custom.scss */
   #el-login-bottom {
     padding: 0 0 34px 0;
   }
 
-  /* line 183, ../sass/custom/_desktop-custom.scss */
+  /* line 191, ../sass/custom/_desktop-custom.scss */
   #el-user-info-panel-mobile {
-    display: none;
+    font-size: 18px;
   }
 
-  /* line 188, ../sass/custom/_desktop-custom.scss */
+  /* line 196, ../sass/custom/_desktop-custom.scss */
   .el-footer-pusher {
     background: #3e3e3e;
     border-right: 10px solid #f1f1f1;
     height: 46px;
+  }
+
+  /* line 207, ../sass/custom/_desktop-custom.scss */
+  #elearning-body:after {
+    content: "";
+    display: block;
+  }
+
+  /* line 213, ../sass/custom/_desktop-custom.scss */
+  #elearning-panel:after {
+    content: "";
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  /* line 3, ../sass/custom/_phone-custom.scss */
+  .el-literature-row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  /* line 9, ../sass/custom/_phone-custom.scss */
+  .el-home-hero-container {
+    display: none;
   }
 }
 @media (max-width: 1199px) {
@@ -9357,4 +9476,28 @@ header.elearning-charcoal img {
   .el-footer-pusher {
     display: none;
   }
+}
+/* line 1, ../sass/custom/_custom-bp.scss */
+.page.row {
+  position: relative;
+}
+
+/* line 7, ../sass/custom/_custom-bp.scss */
+#signup_form {
+  padding: 0 20px 0 20px;
+}
+
+/* line 12, ../sass/custom/_custom-bp.scss */
+#buddypress .dir-search input[type=search], #buddypress .dir-search input[type=text], #buddypress .groups-members-search input[type=search], #buddypress .groups-members-search input[type=text], #buddypress .standard-form input[type=color], #buddypress .standard-form input[type=date], #buddypress .standard-form input[type=datetime-local], #buddypress .standard-form input[type=datetime], #buddypress .standard-form input[type=email], #buddypress .standard-form input[type=month], #buddypress .standard-form input[type=number], #buddypress .standard-form input[type=password], #buddypress .standard-form input[type=range], #buddypress .standard-form input[type=search], #buddypress .standard-form input[type=tel], #buddypress .standard-form input[type=text], #buddypress .standard-form input[type=time], #buddypress .standard-form input[type=url], #buddypress .standard-form input[type=week], #buddypress .standard-form select, #buddypress .standard-form textarea {
+  background: #f1f1f1;
+  border-radius: 0;
+  border: 0;
+  background: #f1f1f1;
+  border: 0;
+  width: 90%;
+}
+
+/* line 22, ../sass/custom/_custom-bp.scss */
+#buddypress .standard-form#signup_form div.submit {
+  float: left;
 }

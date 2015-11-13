@@ -2,9 +2,12 @@ jQuery(document).ready(function(){
 
 	jQuery(window).load(function() { 
      
-    	doc_height = jQuery('.container-main').height();
+     	footer_height = 26;
+    	doc_height = jQuery(document).height() - footer_height;
     	jQuery("#elearning-panel").css('height', doc_height );
 
   	});
+
+  	
 
 });

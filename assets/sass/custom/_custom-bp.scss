@@ -1,0 +1,24 @@
+.page.row {
+    
+    position: relative;
+
+}
+
+#signup_form {
+	
+	padding: 0 20px 0 20px;
+}
+
+#buddypress .dir-search input[type=search], #buddypress .dir-search input[type=text], #buddypress .groups-members-search input[type=search], #buddypress .groups-members-search input[type=text], #buddypress .standard-form input[type=color], #buddypress .standard-form input[type=date], #buddypress .standard-form input[type=datetime-local], #buddypress .standard-form input[type=datetime], #buddypress .standard-form input[type=email], #buddypress .standard-form input[type=month], #buddypress .standard-form input[type=number], #buddypress .standard-form input[type=password], #buddypress .standard-form input[type=range], #buddypress .standard-form input[type=search], #buddypress .standard-form input[type=tel], #buddypress .standard-form input[type=text], #buddypress .standard-form input[type=time], #buddypress .standard-form input[type=url], #buddypress .standard-form input[type=week], #buddypress .standard-form select, #buddypress .standard-form textarea {
+    background: $brand-elearning-silver;
+    border-radius: 0;
+    border: 0;
+    background: $brand-elearning-silver;
+    border: 0;
+    width: 90%;
+    
+}
+
+#buddypress .standard-form#signup_form div.submit {
+    float: left;
+}
