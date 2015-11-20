@@ -9088,11 +9088,11 @@ header.elearning-charcoal img {
 }
 
 /* line 445, ../sass/custom/_custom.scss */
-.el-webcast-container .el-webcast-thumb {
+.el-limelight-container .el-limelight-thumb {
   position: relative;
 }
 /* line 449, ../sass/custom/_custom.scss */
-.el-webcast-container .el-webcast-thumb .fa.fa-play-circle {
+.el-limelight-container .el-limelight-thumb .fa.fa-play-circle {
   position: absolute;
   color: #D77A27;
   font-size: 40px;
@@ -9101,7 +9101,7 @@ header.elearning-charcoal img {
   transform: translate(-50%, -50%);
 }
 /* line 460, ../sass/custom/_custom.scss */
-.el-webcast-container .el-webcast-thumb .el-webcast-thumbnail-wrapper {
+.el-limelight-container .el-limelight-thumb .el-limelight-thumbnail-wrapper {
   width: 100%;
   border: 2px solid #f1f1f1;
   height: 120px;
@@ -9110,7 +9110,7 @@ header.elearning-charcoal img {
 }
 
 /* line 473, ../sass/custom/_custom.scss */
-.el-webcast-container {
+.el-limelight-container {
   padding-top: 20px;
 }
 
