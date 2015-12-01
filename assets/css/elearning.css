@@ -9065,12 +9065,12 @@ header.elearning-charcoal img {
   padding-top: 40px;
 }
 /* line 404, ../sass/custom/_custom.scss */
-.elearning-aside .elearning-widget-area .widget.widget_el_filters_widget ul {
+.elearning-aside .elearning-widget-area .el-filter-widget ul {
   margin: 0;
   padding-left: 0;
 }
 /* line 409, ../sass/custom/_custom.scss */
-.elearning-aside .elearning-widget-area .widget.widget_el_filters_widget ul li {
+.elearning-aside .elearning-widget-area .el-filter-widget ul li {
   padding-bottom: 20px;
   font-size: 14px;
 }
@@ -9470,11 +9470,6 @@ header.elearning-charcoal img {
   /* line 113, ../sass/custom/_lg-tablet-custom.scss */
   #cyno-logo-wrapper #cyno-logo {
     max-width: none;
-  }
-
-  /* line 120, ../sass/custom/_lg-tablet-custom.scss */
-  .el-footer-pusher {
-    display: none;
   }
 }
 /* line 1, ../sass/custom/_custom-bp.scss */
